@@ -1,1 +1,9 @@
 .env
+credentials.json
+token.json
+data/pipeline.csv
+data/pipeline.csv.bak
+__pycache__/
+.venv/
+data/pipeline.tmp
+.pytest_cache/
