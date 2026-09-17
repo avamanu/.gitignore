@@ -25,21 +25,24 @@ Only put things here that are true and that you are happy to say publicly.
   specialist in them. Write "Albert explores", "from a neuroscience perspective", "research suggests".
 
 ## What he works with
-- Post mortem human brain tissue, neuropathology and brain banking.
-- TODO CONFIRM neurosurgical tissue, cellular models, iPSC work and brain organoids: remove
-  TODO CONFIRM from this line only for the ones you have personally worked with
+- Post mortem human brain tissue, neuropathology and diagnostic brain tumour work.
+- Brain banking, including the collection of living tissue from neurosurgical operations and the
+  digitisation of the London Neurodegenerative Diseases Brain Bank histology archive.
+- TODO CONFIRM cellular models, iPSC work and brain organoids: nothing published supports these
+  yet, so remove TODO CONFIRM only for the ones you have personally worked with
 
 This is the thing that separates him from most people who talk about health. He has met disease
 as tissue, not only as data. By the time pathology is visible in a brain, decades of biology have
 usually already happened, which is where his interest in prevention comes from.
 
 ## Signature webinar and talks
-- "Staying Human in the Age of AI": corporate and public health education webinar.
+- "Staying Human in the Age of AI": corporate and public health education webinar, 60 minutes.
 - The Six Pillars of brain health: sleep, food, physical exercise, social stimulation,
   intellectual stimulation, and creativity and hobbies. Presented as interacting systems, never
   as isolated wellness hacks.
 - TODO add other talk titles you actually deliver
-- TODO add formats and lengths (e.g. 45-minute webinar, 90-minute workshop)
+- Standard format: a 60-minute webinar, delivered online or in person.
+- TODO add any other formats you offer (keynote, panel, workshop) and their lengths
 
 ## What he stands for
 - Mechanism before advice: explain why something works, then what to do.
@@ -63,13 +66,40 @@ brain donation, sleep biology, exercise and the brain, stress physiology, cognit
 preventative medicine, public health, social media and attention, AI and medicine, scientific
 literacy and medical misinformation, and the gap between health knowledge and health behaviour.
 
+## Published work
+Peer reviewed journal articles, first author:
+- Pharmacological and clinical heterogeneity of anti-amyloid monoclonal antibodies in early
+  Alzheimer's disease: a systematic review and meta-analysis of randomised trials.
+  Medical Sciences, 2026.
+- Unsupervised machine learning of automated brain volumetry uncovers three volumetric
+  endo-phenotypes in cognitive impairment. Balneo and PRM Research Journal, 2026.
+
+Peer reviewed journal articles, as a co-author:
+- Multiple system atrophy without dysautonomia: an autopsy-confirmed study. Neurology, 2025.
+- Impact of magnetic resonance imaging markers on the diagnostic performance of the International
+  Parkinson and Movement Disorder Society multiple system atrophy criteria. Movement disorders,
+  2024. His most cited work.
+
+Work he has presented, first author. These are conference abstracts. Say "work I presented" or
+"a study I presented at", never "my paper" or "my article":
+- "Living" tissue collection from neurosurgical operations: new ventures in brain banking.
+  Neuropathology and Applied Neurobiology, 2026.
+- Increased and sustained expression of Bax and Survivin in human post mortem tissue following
+  traumatic brain injury. Neuropathology and Applied Neurobiology, 2025.
+- Three brain tumour diagnostic studies, including next generation sequencing of 400 adult-type
+  diffuse gliomas. Virchows Archiv, 2024.
+
+He is also a co-author on reviews in multiple sclerosis, vestibular migraine and diabetic
+neuropathy. Co-authorship on those does not make him a specialist in them.
+
+Never quote citation counts or h-index in a pitch. The numbers are early career and add nothing.
+
 ## Proof and credibility
 - Google Scholar: https://scholar.google.com/citations?user=WvIBHxEAAAAJ
 - ResearchGate: https://www.researchgate.net/profile/Albert-Vamanu
 - Instagram: https://www.instagram.com/albertvamanu/
 - X: https://x.com/VamanuAlbert
 - Links hub: https://linktr.ee/albertvamanu
-- TODO add named publications you want quoted in a pitch, with year and journal
 - TODO past talks, venues and dates
 - TODO media appearances you are happy to mention
 - TODO short testimonials with permission

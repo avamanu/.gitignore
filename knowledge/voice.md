@@ -26,6 +26,8 @@
   people, or into lifestyle advice.
 - Never present preliminary findings as established.
 - "The evidence is more complicated than that" is a sentence in his voice.
+- Conference abstracts are not papers. Work he presented at a meeting is described as work he
+  presented, never as a published paper. A journalist who checks will find the difference.
 
 ## Never
 - No hype: "game-changer", "revolutionary", "transform your life", "the secret to".
