@@ -1,3 +1,5 @@
+import pytest
+
 from pr_agent import pitch
 
 CLEAN = "Hi Jane, your episode on sleep and shift work was careful about the evidence, which is rare. I research head injury and neurodegeneration at King's, and I run public sessions on brain health. Would a short call be useful?"
@@ -40,3 +42,36 @@ def test_footer_carries_the_signature_and_opt_out():
     assert SETTINGS["sign_off"] in footer
     assert SETTINGS["signature"].strip().splitlines()[0] in footer
     assert SETTINGS["opt_out_line"] in footer
+
+
+CREDENTIAL_CLAIMS = [
+    "I am a neurologist based in London.",
+    "As a doctor, I see this pattern often.",
+    "My patients ask about this constantly.",
+    "Dr Vamanu would be glad to join the panel.",
+    "I diagnose head injury most weeks.",
+]
+
+
+@pytest.mark.parametrize("claim", CREDENTIAL_CLAIMS)
+def test_credentials_he_does_not_hold_are_caught(claim):
+    assert any("false credential" in i for i in pitch.lint("Subject", claim, 170)), claim
+
+
+def test_accurate_descriptions_are_left_alone():
+    """The checks must not fire on what is actually true of him."""
+    fine = [
+        "I am a clinical neuroscientist and a PhD researcher at King's.",
+        "I work alongside neurosurgeons and neurologists at the brain bank.",
+        "I spend my week with post mortem brain tissue.",
+        "A neurologist I work with raised the same question.",
+    ]
+    for sentence in fine:
+        assert pitch.lint("Subject", sentence, 170) == [], sentence
+
+
+def test_overclaiming_about_evidence_is_caught():
+    for claim in ["Science proves that sleep matters.",
+                  "This changes everything for dementia.",
+                  "We can reverse ageing with one trick."]:
+        assert pitch.lint("Subject", claim, 170), claim

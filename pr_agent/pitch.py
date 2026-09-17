@@ -10,6 +10,22 @@ BANNED = [
     "the secret to", "unexpected delight", "prompted me to reflect", "the honest version",
     "longer-horizon", "in that spirit", "hope this email finds you", "hope this finds you",
     "delve", "unlock", "cutting-edge", "i'm reaching out", "i am reaching out", "synergy",
+    "science proves", "scientists have proven", "doctors don't want you to know",
+    "this changes everything", "cure dementia", "reverse ageing", "reverse aging",
+    "miracle cure", "one weird trick", "this one trick",
+]
+# Claims Albert must never make about himself. He is a clinical neuroscientist and a PhD
+# researcher. He is not a doctor, he has no patients, and ambition towards medicine is not a
+# qualification. Writing any of this to a journalist or an event organiser is the most expensive
+# mistake this tool could make, so it is checked by code rather than left to the model.
+FALSE_CREDENTIALS = [
+    (r"\b(dr|dr\.|doctor|professor|prof\.?)\s+vamanu\b", "calls him Dr or Professor"),
+    (r"\bas an?\s+(doctor|physician|medical doctor|neurologist|neurosurgeon|clinician|"
+     r"psychiatrist|clinical psychologist|professor)\b", "describes him as a clinician"),
+    (r"\bi\s*(?:'m|\s+am)\s+an?\s+(doctor|physician|medical doctor|neurologist|neurosurgeon|"
+     r"clinician|psychiatrist|clinical psychologist|professor)\b", "claims a credential he does not hold"),
+    (r"\bmy patients\b", "implies he treats patients"),
+    (r"\bi (?:treat|diagnose|prescribe)\b", "implies clinical practice"),
 ]
 US_SPELLINGS = {
     "color": "colour", "behavior": "behaviour", "organize": "organise", "recognize": "recognise",
@@ -116,6 +132,8 @@ def lint(subject, body, max_words=None, check_subject=True):
     if "\u2014" in text or "\u2013" in text:
         issues.append("contains an em or en dash")
     issues += [f'banned phrase: "{p}"' for p in BANNED if p in low]
+    issues += [f"false credential: {why}" for pattern, why in FALSE_CREDENTIALS
+               if re.search(pattern, low)]
     issues += [f'US spelling "{us.strip()}" (use "{uk.strip()}")' for us, uk in US_SPELLINGS.items()
                if re.search(r"\b" + re.escape(us), low)]
     if CONTRAST_RE.search(text):
