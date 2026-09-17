@@ -1,0 +1,21 @@
+# Model used for research and drafting
+model: claude-sonnet-5
+
+# Leave blank to use your Gmail account's default address.
+# If you add a "Send mail as" alias in Gmail (e.g. bookings@bodiesbrainsminds.com), put it here.
+from_address: ""
+
+# Added to every email by code, so it is always present and always accurate.
+sign_off: "Best wishes,"
+signature: |
+  Albert Vamanu
+  Clinical neuroscientist | Founder, Bodies Brains and Minds
+  bodiesbrainsminds.com
+opt_out_line: "If this isn't relevant to you, just reply 'no thanks' and I won't contact you again."
+
+# Guardrails
+max_new_pitches_per_day: 15   # caps how many first pitches you can approve per day
+max_words: 170                # body length limit for first pitches
+followup_days: [7, 14]        # days after last sent email before follow-up 1 and 2
+max_followups: 2
+research_max_searches: 5

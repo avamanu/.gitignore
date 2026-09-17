@@ -1,0 +1,74 @@
+# One block per audience. The "audience" column in your targets CSV must match a key here.
+# Edit freely: this is where your pitch strategy lives.
+
+podcasts:
+  label: Podcast host or producer
+  goal: A guest slot on the show
+  offer: >
+    A guest who can explain how sleep, movement, nutrition, connection, learning and pleasure
+    change the brain, from mechanism to daily life, without hype or extreme protocols.
+  angle_guidance: >
+    Tie it to something specific the show has covered recently. Offer two or three concrete
+    episode ideas their listeners would care about. Make the host's job easy.
+  ask: Would they be open to a short call or to having him on as a guest.
+  avoid: Asking them to promote anything. Pretending to be a long-time listener.
+
+journalists:
+  label: Journalist or editor covering health, science or sport
+  goal: Being quoted as an expert source, or an opinion piece
+  offer: >
+    Clear, carefully hedged expert comment on brain health, concussion and head injury in sport,
+    neurodegeneration, and lifestyle factors, with honest lines between strong and weak evidence.
+  angle_guidance: >
+    Lead with a timely angle linked to their recent coverage or a current news story. Keep it
+    very short. Journalists skim.
+  ask: Whether he can be a source they call on for comment.
+  avoid: Long background. Overstating what the science shows.
+
+events:
+  label: Event, conference or festival organiser
+  goal: A speaking slot
+  offer: >
+    Talks and webinars such as "Staying Human in the Age of AI" and the Six Pillars of brain
+    health, pitched for general, professional or sporting audiences.
+  angle_guidance: >
+    Show how a talk fits the event's theme or audience based on the research. Mention format
+    flexibility (keynote, panel, workshop, online).
+  ask: Whether they are programming speakers for an upcoming event and who to speak to.
+  avoid: Attaching a CV or deck in the first email.
+
+corporate_wellbeing:
+  label: HR, people or wellbeing lead at an organisation
+  goal: A paid webinar or workshop for staff
+  offer: >
+    Evidence-based staff sessions on brain health, sleep, stress, focus and staying well while
+    working with AI, led by a clinical neuroscientist rather than a wellness influencer.
+  angle_guidance: >
+    Connect to their workforce challenges or wellbeing programme if the research shows one.
+    Emphasise practical small daily steps and credibility.
+  ask: A short call to see whether a session would suit their wellbeing plans.
+  avoid: Corporate buzzwords. Promising productivity gains.
+
+councils:
+  label: Council public health or community wellbeing team
+  goal: A community webinar or partnership
+  offer: >
+    Accessible public sessions on brain health across the lifespan, framed around circumstance
+    (time, cost of living, food environment) rather than blame.
+  angle_guidance: >
+    Link to their public health priorities or strategy if the research finds them. Be respectful
+    of tight budgets; mention flexible formats.
+  ask: Whether there is someone in the team who plans community health sessions.
+  avoid: Sounding like a sales pitch. Assuming budget exists.
+
+universities_sport:
+  label: University, school, sports club or governing body
+  goal: A talk for students, athletes or coaches
+  offer: >
+    Talks on the brain and sport: training, recovery, sleep, head injury awareness and long-term
+    brain health, from someone with a serious Olympic weightlifting background and a research
+    focus on traumatic brain injury.
+  angle_guidance: >
+    Use the sport and research overlap. Reference their programme, club or recent initiative.
+  ask: Whether a talk for their students, athletes or coaches would be of interest.
+  avoid: Medical advice. Alarmism about concussion.
